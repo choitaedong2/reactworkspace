@@ -10,3 +10,7 @@
 
 ### 실행 cmd
 - cd ../01.my-app -> npm start
+
+### git-ignore
+- https://www.toptal.com/developers/gitignore
+- 
