@@ -1,7 +1,8 @@
 const Views = ({count}) => {
     return (
         <>
-            test
+            <h1>현재 카운트</h1>
+            <h1>{count}</h1>
         </>
     )
 }

@@ -1,12 +1,13 @@
-
+import {Button} from 'react-bootstrap';
+import Header from './common/Header';
 import './App.css';
-import Views from './component/View';
 
 function App() {
+
   return (
     <div className="App">
-      <h1>Counter</h1>
-        <Views count/>
+      <Header/>
+      <Button/>
     </div>
   );
 }
