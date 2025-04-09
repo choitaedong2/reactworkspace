@@ -1,38 +1,117 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .App {
+  flex: 1 0 70%;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+  flex: 0 0 15%;
+}
+
+.header-container {
+  position: relative;  /* 중앙 텍스트 위치 기준점 */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-btn {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.header-btn:hover {
+  background-color: #777;
+}
+
+/* Navigation Bar 스타일 */
+
+.nav-bar {
+  background-color: #444;
+  padding: 0.5rem 2rem;
+  margin-top: 0.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 0;
+  gap: 0; /* 제거 or 0으로 설정 */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0.5rem 0;
+}
+
+.nav-item:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Footer 스타일 */
+.footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 2rem;
+  text-align: center;
+  /* margin-top: 2rem; */
+  flex: 0 0 15%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-line {
+  width: 60%;
+  margin: 0 auto 1rem auto;
+  border: none;
+  border-top: 1px solid #555;
+}
+
+.footer-text p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
